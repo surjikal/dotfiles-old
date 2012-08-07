@@ -1,0 +1,76 @@
+# Powder Toy
+sci-libs/fftw threads -fortran
+
+# Chromium
+dev-libs/libxml2 icu
+app-admin/sudo offensive
+dev-lang/python sqlite
+
+# Geany
+dev-util/geany-plugins gtkspell enchant
+
+# Tex Live
+>=media-libs/freetype-1.4_pre20080316-r2 kpathsea
+
+# For the lcd-filtering stuff
+media-libs/fontconfig -cleartype lcdfilter
+media-libs/freetype -bindist -cleartype lcdfilter  
+x11-libs/cairo -cleartype lcdfilter  
+x11-libs/libXft -cleartype lcdfilter
+
+# Jump n Bump
+media-libs/sdl-mixer mikmod mod
+
+# Gens 
+=games-emulation/gens-2.15.5 **
+
+# Xine doesn't work well for some odd reason
+media-sound/quodlibet gstreamer
+
+# Ruby (required by world emerge Jan04)
+>=dev-ruby/rubygems-1.8.11 ruby_targets_ruby19
+>=dev-ruby/racc-1.4.7      ruby_targets_ruby19
+>=dev-ruby/rake-0.9.2.2    ruby_targets_ruby19
+>=dev-ruby/json-1.6.3      ruby_targets_ruby19
+>=dev-ruby/rdoc-3.12       ruby_targets_ruby19
+
+# Support for usb printers
+net-print/cups usb
+net-print/hplip qt4
+
+# Qt
+dev-util/qt-creator examples
+
+# Lmms
+media-sound/lmms fluidsynth vst
+
+
+# Django
+dev-python/django-extensions graphviz
+
+# Appended
+x11-libs/qt-gui gtkstyle
+net-p2p/rtorrent color
+sys-kernel/sysrescue-std-sources binary
+x11-base/xorg-server udev
+net-print/cups -usb
+dev-vcs/git tk
+app-portage/layman git
+app-emulation/virtualbox extensions
+dev-lang/ghc binary
+media-video/vlc skins upnp 
+sys-fs/udev -acl
+
+>=virtual/python-json-0 external
+>=media-libs/gd-2.0.35-r3 fontconfig
+>=sys-libs/zlib-1.2.6 minizip
+
+#required by gnome-base/librsvg-2.36.1, required by media-gfx/graphviz-2.28.0[svg], required by dev-python/pygraphviz-1.1-r1, required by dev-python/django-extensions-0.8[graphviz], required by @selected, required by @world (argument)
+>=dev-libs/libxml2-2.8.0-r1001 icu
+>=x11-libs/qt-webkit-4.8.2 icu
+
+#required by media-libs/mesa-8.1_rc1_pre20120724[xorg], required by www-client/firefox-14.0.1, required by @selected, required by @world (argument)
+>=x11-libs/libdrm-2.4.37 libkms
+#required by sys-devel/prelink-20111012, required by app-emulation/wine-1.5.9[-hardened], required by @selected, required by @world (argument)
+>=dev-libs/elfutils-0.154-r1 static-libs
+app-arch/file-roller nautilus
