@@ -1,0 +1,7 @@
+# Git
+alias gk="gitk --all"
+
+
+# Common commands
+alias untar="tar xvf"
+
